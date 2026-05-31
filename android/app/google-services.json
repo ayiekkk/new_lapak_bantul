@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1001371831855",
+    "project_id": "lapak-bantul-c9a9c",
+    "storage_bucket": "lapak-bantul-c9a9c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001371831855:android:bdd84c52100f15a46a00da",
+        "android_client_info": {
+          "package_name": "com.example.percobaan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-yx-clt_RnivAmO9l0MTHeA2DII0F8fQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001371831855:android:3c709eb2e6c674f46a00da",
+        "android_client_info": {
+          "package_name": "com.lapakbantul.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-yx-clt_RnivAmO9l0MTHeA2DII0F8fQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
