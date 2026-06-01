@@ -110,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 40),
 
                       // Logo
-                      const LogoWidget(size: 90),
+                      const LogoWidget(size: 90, darkBackground: true),
                       const SizedBox(height: 20),
 
                       // App name

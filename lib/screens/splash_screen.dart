@@ -239,64 +239,34 @@ class _SplashScreenState extends State<SplashScreen>
   }
 
   Widget _buildLogo() {
-    return Container(
-      width: 110,
-      height: 110,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(24),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.accentGold.withOpacity(0.4),
-            blurRadius: 30,
-            spreadRadius: 5,
-          ),
-        ],
+  return Container(
+    width: 110,
+    height: 110,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(24),
+      boxShadow: [
+        BoxShadow(
+          color: AppColors.accentGold.withOpacity(0.4),
+          blurRadius: 30,
+          spreadRadius: 5,
+        ),
+      ],
+    ),
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(24),
+      child: Image.asset(
+        'assets/image/logo.png',
+        fit: BoxFit.contain,
+        errorBuilder: (context, error, stackTrace) {
+          return const Center(
+            child: Icon(
+              Icons.image_not_supported,
+              size: 50,
+            ),
+          );
+        },
       ),
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          // Shield shape
-          Container(
-            width: 70,
-            height: 80,
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [Color(0xFF1A2F5A), Color(0xFF0D1B3E)],
-              ),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: const Center(
-              child: Text(
-                'LB',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 26,
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 1,
-                ),
-              ),
-            ),
-          ),
-          // Gold stripe
-          Positioned(
-            top: 15,
-            child: Container(
-              width: 70,
-              height: 6,
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(colors: [
-                  Color(0xFFFFD700),
-                  Color(0xFFFFA500),
-                ]),
-                borderRadius: BorderRadius.circular(3),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+    ),
+  );
+}
 }
